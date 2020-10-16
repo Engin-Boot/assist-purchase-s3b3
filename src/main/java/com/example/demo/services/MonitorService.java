@@ -14,13 +14,7 @@ public Monitor addNewProduct(Monitor product);
 public void deleteById(int id ); 
 
 public Monitor findById(int id); 
-public <Iterable> Monitor categoriesOffered();
-public Iterable<Monitor> categories();
-public Iterable<Monitor> touchscreenIsSelected();
-public Iterable<Monitor> interoperabilityIsSelected();
-public Iterable<Monitor> interoperabilityIsNotSelected();
 
-Monitor selectedProduct(int id);
 }
 
 

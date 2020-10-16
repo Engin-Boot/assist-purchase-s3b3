@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.domain.Monitor;
 import com.example.demo.repositories.MonitorRepository;
 
-@Service("monitorService")
+@Service
 public class MonitorServiceImpl implements MonitorService {
 	@Autowired
 	private MonitorRepository productRepository;
@@ -34,49 +34,7 @@ public class MonitorServiceImpl implements MonitorService {
 
 		return productRepository.findById(id).get();
 	}
-	public Monitor categoriesOffered() {
-		// TODO Auto-generated method stub
-		return (Monitor) productRepository.findAll();
-	}
 
-	public Iterable<Monitor> categories() {
-		// TODO Auto-generated method stub
-		return productRepository.findAll();
-	}
-
-	public Iterable<Monitor> touchscreenIsSelected() {
-		// TODO Auto-generated method stub
-		return productRepository.findAll();
-	}
-
-	public Iterable<Monitor> InteroperabilityIsSelected() {
-		// TODO Auto-generated method stub
-		return productRepository.findAll();
-	}
-
-	public Iterable<Monitor> InteroperabilityIsNotSelected() {
-		// TODO Auto-generated method stub
-		return productRepository.findAll();
-	}
-
-	@Override
-	public Iterable<Monitor> interoperabilityIsSelected() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Iterable<Monitor> interoperabilityIsNotSelected() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	
-	public Monitor selectedProduct(int id) {
-		// TODO Auto-generated method stub
-		return productRepository.findById(id).get();
-	}
 	
 
 }
