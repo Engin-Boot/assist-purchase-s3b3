@@ -3,6 +3,7 @@ name: Limit complexity
 on:
   push:
     branches: [ master ]
+  
   pull_request:
     branches: [ master ]
 
