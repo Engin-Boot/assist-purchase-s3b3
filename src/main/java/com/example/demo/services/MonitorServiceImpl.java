@@ -1,5 +1,7 @@
 package com.example.demo.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +14,8 @@ public class MonitorServiceImpl implements MonitorService {
 	private MonitorRepository productRepository;
 
 	@Override
-	public Iterable<Monitor> findAll() {
-
-		return productRepository.findAll();
+	public List<Monitor> findAll() {
+		return (List<Monitor>) productRepository.findAll();
 	}
 
 	@Override
