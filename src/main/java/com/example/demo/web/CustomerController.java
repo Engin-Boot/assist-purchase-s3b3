@@ -28,7 +28,7 @@ public class CustomerController {
 		return li;
 	}
 
-	@GetMapping("/monitor/category/Touchscreen")
+	@GetMapping("/monitor/category/touchscreen")
 	public List<Monitor> categriesOffered() {
 
 		List<Monitor> productList = new ArrayList<Monitor>();
@@ -70,7 +70,7 @@ public class CustomerController {
 		return productList;
 	}
 
-	@GetMapping("/monitor/category/touchscreen/nointeroperability")
+	@GetMapping("/monitor/category/touchscreen/no-interoperability")
 	public List<Monitor> interoperabilityIsNotSelected() {
 
 		List<Monitor> productList = new ArrayList<Monitor>();

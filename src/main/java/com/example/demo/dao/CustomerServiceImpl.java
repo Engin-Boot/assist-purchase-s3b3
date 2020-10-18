@@ -1,5 +1,7 @@
 package com.example.demo.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.demo.domain.Monitor;
@@ -18,25 +20,25 @@ public class CustomerServiceImpl implements CustomerService {
 		return productRepository.findAll();
 	}
 
-	public Iterable<Monitor> touchscreenIsSelected() {
-		return productRepository.findAll();
+	public List<Monitor> touchscreenIsSelected() {
+		return (List<Monitor>) productRepository.findAll();
 	}
 
-	public Iterable<Monitor> InteroperabilityIsSelected() {
-		return productRepository.findAll();
+	public List<Monitor> InteroperabilityIsSelected() {
+		return (List<Monitor>) productRepository.findAll();
 	}
 
-	public Iterable<Monitor> InteroperabilityIsNotSelected() {
-		return productRepository.findAll();
+	public List<Monitor> InteroperabilityIsNotSelected() {
+		return (List<Monitor>) productRepository.findAll();
 	}
 
 	@Override
-	public Iterable<Monitor> interoperabilityIsSelected() {
+	public List<Monitor> interoperabilityIsSelected() {
 		return null;
 	}
 
 	@Override
-	public Iterable<Monitor> interoperabilityIsNotSelected() {
+	public List<Monitor> interoperabilityIsNotSelected() {
 		return null;
 	}
 

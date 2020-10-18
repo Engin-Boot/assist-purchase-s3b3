@@ -23,7 +23,6 @@ public class MonitorController {
 
 	@GetMapping("/monitor")
 	public List<Monitor> getAllProducts() {
-
 		List<Monitor> productList = new ArrayList<Monitor>();
 
 		for (Monitor product : productService.findAll()) {
