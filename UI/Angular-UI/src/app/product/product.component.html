@@ -1,0 +1,230 @@
+<section class="w3l-about-breadcrumb">
+  <div class="breadcrumb-bg breadcrumb-bg-services py-5">
+    <div class="container py-lg-5 py-md-3">
+      <h2>Products</h2>
+      <p>Continuous patient monitoring systems</p>
+    </div>
+  </div>
+</section>
+<!-- Content-with-photo23 block -->
+<section class="w3l-features-7 py-5">
+  <!-- /features -->
+  <div class="features py-lg-5 py-sm-3" id="services">
+    <div class="container">
+      <h3 class="title text-center mb-sm-5 mb-4 pb-lg-4">We Provide High Quality Products in health care</h3>
+
+      <div class="container" >
+        <p>Search for a monitor here</p>
+        <form #formdata="ngForm" (ngSubmit)="onSubmits(formdata)">
+          <input type="text" class="form-control" ngModel name="label" placeholder="Press Enter to search">
+          <div class="input-group-append">
+          </div>
+        </form>
+        <br>
+        <br>
+      </div>
+      <!-- <div class="example-container">
+        <form  (ngSubmit)="onSubmits()">
+        <mat-form-field appearance="fill" >
+          <mat-label>Search for a monitor here</mat-label>
+          <input matInput  placeholder="IntelliVue MX550">
+        </mat-form-field>
+    </form> -->
+
+    <mat-card class="card-inner" >
+      <mat-card-title class="center">  Let us help you find the perfect monitor for you!</mat-card-title>
+
+      <div class="row fea-gd-vv">
+
+        <mat-horizontal-stepper linear #stepper style="background-color:#e6f5ff">
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup" (ngSubmit)="onSubmit1()">
+              <ng-template matStepLabel>Need Touch Screen?</ng-template>
+              <b>Intuitive touchscreen simplifies use</b>I <br><br>
+              The user interface is designed to enhance visibility of patient data, making it easy to use, and compatible with standard software, helping you focus on the patient, not the monitor.
+              <!--                 <mat-form-field>   -->
+              <!-- <mat-label>Need a Touch Screen model?</mat-label> -->
+              <mat-radio-group aria-label="Need a Touch Screen model?" formControlName="firstCtrl" required
+                class="example-radio-group" [(ngModel)]="test1">
+
+                <mat-radio-button class="example-radio-button" *ngFor="let choice of choices" [value]="choice">
+
+                  {{choice}}
+
+                </mat-radio-button>
+
+              </mat-radio-group>
+              <!--                      <input matInput placeholder="Yes/No" formControlName="firstCtrl" required>
+                        </mat-form-field> -->
+              <div>
+                <button mat-stroked-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup" label="Need Portability?">
+            <form [formGroup]="secondFormGroup" (ngSubmit)="onSubmit2()">
+              <b>Portable design allows you to take monitoring with you!</b> <br><br>
+              With standard battery operation, a built-in handle, and overall rugged design, this solution can cope with the demanding in-hospital transport sometimes required in acute care
+              <!-- <mat-form-field> -->
+              <!-- <mat-label>Need a Wireless model?</mat-label> -->
+              <mat-radio-group aria-label="Need a Wireless model?" formControlName="secondCtrl" required
+                class="example-radio-group" [(ngModel)]="test2">
+                <mat-radio-button class="example-radio-button" *ngFor="let choice of choices" [value]="choice">
+
+                  {{choice}}
+
+                </mat-radio-button>
+              </mat-radio-group>
+              <!-- <input matInput formControlName="secondCtrl" placeholder="Yes/No" required>
+                        </mat-form-field> -->
+              <div>
+                <button mat-stroked-button matStepperPrevious>Back</button>
+                <button mat-stroked-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="thirdFormGroup" label="Need Interoperability?">
+            <form [formGroup]="thirdFormGroup" (ngSubmit)="onSubmit3()">
+              <b>Advanced Clinical Solutions to summarize and visualize data</b><br><br>
+              Built-in Advanced Clinical Solutions that provide tools to summarize and visualize complex clinical data and their interactions.
+              <!-- <mat-form-field>
+                            <mat-label>Need an Interoperable model?</mat-label> -->
+              <mat-radio-group aria-label="Need an Interoperable model?" formControlName="thirdCtrl" required
+                class="example-radio-group" [(ngModel)]="test3">
+                <mat-radio-button class="example-radio-button" *ngFor="let choice of choices" [value]="choice">
+
+                  {{choice}}
+
+                </mat-radio-button>
+              </mat-radio-group>
+              <!-- <input matInput formControlName="thirdCtrl" placeholder="Yes/No" required>
+                          </mat-form-field> -->
+              <div>
+                <button mat-stroked-button matStepperPrevious>Back</button>
+                <button mat-stroked-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="fourthFormGroup" label="Need EMR Connectivity?">
+            <form [formGroup]="fourthFormGroup" (ngSubmit)="onSubmit4()">
+              <b>Connectivity options help you make the most of your EMR</b><br><br>
+             Works to enhance your investment by sharing data with clinical information systems, helping to contribute to a comprehensive EMR
+              <!-- <mat-form-field>
+                            <mat-label>Need an EMR connective model?</mat-label> -->
+              <mat-radio-group aria-label="Need an EMR connective model?" formControlName="fourthCtrl" required
+                class="example-radio-group" [(ngModel)]="test4">
+                <mat-radio-button class="example-radio-button" *ngFor="let choice of choices" [value]="choice">
+
+                  {{choice}}
+
+                </mat-radio-button>
+              </mat-radio-group>
+              <!-- <input matInput formControlName="fourthCtrl" placeholder="Yes/No" required>
+                          </mat-form-field> -->
+              <div>
+                <button mat-stroked-button matStepperPrevious>Back</button>
+                <button mat-stroked-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step label="Show suggestions">
+            <!-- <ng-template matStepLabel>Done</ng-template> -->
+            <form (ngSubmit)="onSubmit5()">
+              <p>Are you sure about your choices?</p>
+              <div>
+                <button mat-stroked-button matStepperPrevious>Back</button>
+                <button mat-stroked-button (click)="stepper.reset()">Reset</button>
+                <button mat-stroked-button>Confirm</button>
+              </div>
+            </form>
+          </mat-step>
+        </mat-horizontal-stepper>
+
+      </div>
+     </mat-card>
+    </div>
+  </div>
+  <!-- //features -->
+  <!-- services 1-->
+  <section class="w3l-services-1 py-5" *ngIf="showstepper">
+    <div class="services1 py-lg-5 py-sm-3">
+      <div class="container">
+        <h3 class="title text-center mb-sm-5 mb-4">
+          We chose this product for you!
+        </h3>
+
+        <div class="row services1-content w3l-news">
+          <div class="col-lg-4 col-md-6 column" *ngFor='let monitor of monitorfromstepper'>
+            <a routerLink="/" class="zoom">
+              <img src="{{ monitor.image }}" class="img-fluid" />
+              <div class="service-info">
+                <h4 class="course">{{ monitor.name}}</h4>
+                 <p>{{ monitor.description}}</p>
+                <button class="btn btn-primary btn-style">Contact Us</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //services 1 -->
+   <!-- services 1-->
+   <section class="w3l-services-1 py-5" *ngIf="showsearch">
+    <div class="services1 py-lg-5 py-sm-3">
+      <div class="container">
+        <h3 class="title text-center mb-sm-5 mb-4">
+          Searched Product!
+        </h3>
+
+        <div class="row services1-content w3l-news">
+          <div class="col-lg-4 col-md-6 column">
+            <a routerLink="/" class="zoom">
+              <img src="{{monitorname.image}}" class="img-fluid" />
+              <div class="service-info">
+                <h4 class="course">{{monitorname.name}}</h4>
+                 <p>{{ monitorname.description}}</p>
+                <button class="btn btn-primary btn-style">Contact Us</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //services 1 -->
+</section>
+
+
+<!-- services 1-->
+<section class="w3l-services-1 py-5">
+  <div class="services1 py-lg-5 py-sm-3">
+    <div class="container">
+      <h3 class="title text-center mb-sm-5 mb-4">
+        All products
+      </h3>
+
+      <div class="row services1-content w3l-news">
+        <div class="col-lg-4 col-md-6 column" *ngFor='let monitor of monitors'>
+          <a routerLink="/" class="zoom">
+            <img src="{{monitor.image}}" class="img-fluid" />
+            <div class="service-info">
+              <h4 class="course">{{ monitor.name}}</h4>
+              <p>{{ monitor.description}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //services 1 -->
+<!-- Medical Checkup -->
+<section class="w3l-grid-quote py-5 bg-primary">
+  <div class="container py-lg-3">
+
+    <h3>Talk to our sales representative for business enquries </h3>
+
+    <a routerLink="contact" class="btn btn-outline-primary btn-style-outline ml-2">Contact Us</a>
+  </div>
+</section>
