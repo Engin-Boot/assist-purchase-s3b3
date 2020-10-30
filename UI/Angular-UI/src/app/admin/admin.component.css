@@ -1,0 +1,68 @@
+.example-container {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+  
+  .customleftsidebar {
+    min-height: 300px;
+  }
+  
+  .customleftsidebar ul {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+    background: #fff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      box-shadow: 0 0px 3px rgba(0,0,0,0.16), 0 0px 3px rgba(0,0,0,0.23);
+  }
+  
+  .customleftsidebar ul li {
+    display: block;
+    text-align: center;
+  }
+  
+  .customleftsidebar ul li a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 10px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .customleftsidebar ul li.active {
+    color: #0167bb;
+  }
+  .customserach button {
+    background: #0167bb;
+    color: #fff;
+  }
+  .customserach{
+    margin-bottom:20px;
+  }
+  
+  div#editproductModal button.close {
+    right: 10px;
+    font-size: 41px;
+    color: #17449e;
+  }
+  
+  div#editproductModal h4.modal-title {
+    text-align: center !important;
+    display: block;
+    width: 100%;
+    margin-top: -17px;
+    font-weight: 500;
+  }
+  .adminbg {
+    background: #ececec;
+  }
+  .productsection {
+    width: 110%;
+    background: #fff;
+    padding: 52px 20px;
+  }
+  

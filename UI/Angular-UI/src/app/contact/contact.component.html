@@ -1,0 +1,51 @@
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-contact py-5">
+        <div class="container py-lg-5 py-md-3">
+            <h2>Contact Us</h2>
+            <p>Get Intouch with us</p>
+        </div>
+    </div>
+</section>
+<!-- Contact section -->
+<section class="w3l-contact py-5" id="contact">
+    <div class="container py-lg-3">
+        <h3 class="title mb-4">Contact our Sales team</h3>
+        <div class="row">
+            <div class="col-md-8 contact-form">
+                <form  #formdata="ngForm" (ngSubmit)="onSubmits(formdata)">
+                    <input type="text" class="form-control" ngModel name="Name" placeholder="Name" /><br />
+                    <input type="email" class="form-control" ngModel name="Sender" placeholder="E-mail" /><br />
+                    <input type="mobile" class="form-control" ngModel name="Mobile" placeholder="Mobile" /><br />
+                    <input type="text" class="form-control" ngModel name="Device" placeholder="Monitor device" /><br />
+                    <textarea class="form-control" ngModel name="Message" placeholder="Your Message" style="height:150px;"></textarea><br />
+                    <div class="">
+                        <button class="btn btn-primary btn-style">Submit now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-5 w3-contact-address">
+                <b>Address:</b>
+                <p>#135 block,</p>
+                <p>Barnard St. Brooklyn,</p>
+                <p>55001 Nevada, 445586,</p>
+                <p>NY 10036, USA.</p>
+                <br />
+                <b>Phone:</b>
+                <p><a routerLink="tel: +1-2345-345-678-11"> +1-2345-345-678-11</a></p>
+                <p><a routerLink="tel:+ +1-2345-345-678-12"> +1-2345-345-678-12</a></p>
+                <br />
+                <b>Email:</b>
+                <p><a routerLink="mailto:medpillhospital@mail.com">medpillhospital@mail.com</a></p>
+                <p><a routerLink="mailto:medpill@supportmail.com">medpill@supportmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //Contact section -->
+
+<!-- map -->
+<div class="map">
+    <div class="gmap_canvas">
+    <iframe width="1080" height="361" id="gmap_canvas" src="https://maps.google.com/maps?q=philips%20innovation&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div><style>.mapouter{position:relative;text-align:right;height:361px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:361px;width:1500px;}
+    </style></div>
