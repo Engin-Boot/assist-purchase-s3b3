@@ -1,3 +1,8 @@
+[![GitHub issues](https://img.shields.io/github/issues/Engin-Boot/assist-purchase-s3b3)](https://github.com/Engin-Boot/assist-purchase-s3b3/issues)
+![GitHub last commit](https://img.shields.io/github/last-commit/Engin-Boot/assist-purchase-s3b3)
+![GitHub top language](https://img.shields.io/github/languages/top/Engin-Boot/assist-purchase-s3b3)
+![Limit complexity](https://github.com/Engin-Boot/assist-purchase-s3b3/workflows/Limit%20complexity/badge.svg)
+![Build Run and Test](https://github.com/Engin-Boot/assist-purchase-s3b3/workflows/Build%20Run%20and%20Test/badge.svg)
 # Assist a Purchase
 
 Philips offers monitoring solutions, as [seen here](https://www.philips.co.in/healthcare/solutions/patient-monitoring/continuous-patient-monitoring-systems).
